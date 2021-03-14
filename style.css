@@ -14,7 +14,7 @@ p {
     font-family: 'Roboto';
 }
 
-::placeholder {
+input::placeholder {
     font-size: 18px;
     font-family: 'Roboto';
 }
