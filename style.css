@@ -10,12 +10,12 @@ h1 {
 
 
 p {
-    font-size: 26px;
+    font-size: 32px;
     font-family: 'Roboto';
 }
 
-input::placeholder {
-    font-size: 18px !important;
+::placeholder {
+    font-size: 26px;
     font-family: 'Roboto';
 }
 
