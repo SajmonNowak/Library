@@ -9,8 +9,13 @@ h1 {
 }
 
 
-p, ::placeholder {
-    font-size: 22px;
+p {
+    font-size: 26px;
+    font-family: 'Roboto';
+}
+
+::placeholder {
+    font-soze: 18px;
     font-family: 'Roboto';
 }
 
