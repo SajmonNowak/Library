@@ -18,10 +18,6 @@ input {
     background-color: lavender;
 }
 
-body {
-    padding: 20px; 
-}
-
 button {
     cursor:pointer;
 }
@@ -109,7 +105,7 @@ button {
 }
 
 #statusDiv {
-    margin-top: 40px;;
+    margin-top: 40px;
 }
 
 .modalBtnsDiv {
@@ -144,6 +140,14 @@ button {
     font-size: 120px;
     width: 100%;
     padding: 20px 0px;
+}
+
+@media only screen and (max-width: 1600px) {
+    .far {
+        padding:0px;
+        padding-bottom: 20px;
+        font-size: 60px;
+    }
 }
 
 /* Library */
