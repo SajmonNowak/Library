@@ -1,0 +1,62 @@
+<html>
+<head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+
+
+
+    <div id="modal">
+        <div class="modal-content">
+            <h2 style="font-size: 32px;"> Add New Book </h2>
+            <form>
+                <input type="text" placeholder="Title" class="area" id="titleInput"> <br>
+                <input type="text" placeholder="Author" class="area" id="authorInput"> <br>
+                
+                <p id="pagesInfoLabel">Reading status</p> 
+                <div class="pagesDiv" id="pagesDiv">
+                    <input type="number" id="readPagesInput" min="0" max="9999" placeholder="Pages Read" class="pagesInput">
+                    <p> / </p>
+                    <input type="number" id="totalPagesInput" min="0" max="9999" placeholder="Total Pages" class="pagesInput">
+                </div>
+
+                <div id="statusDiv" class ="area">
+                    <p class="smiley" id="s1"><i class="far fa-meh"></i> Not started yet </p> <br>
+                    <p class="smiley" id="s2"><i class="far fa-smile"></i> Currently reading </p> <br>
+                    <p class="smiley" id="s3"><i class="far fa-grin-beam"></i> Finished reading (yaay) </p> <br>
+                </div>
+
+                <div class="modalBtnsDiv">
+                    <button class="modalBtn" id="submitNewBookBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="header">
+        <div id="StatisticsDiv">
+            <p id="booksCounter">Books: 0</p>
+            <p id="booksReadCounter">Books read: 0</p>
+            <p id="totalPagesCounter">Total pages: 0</p>
+            <p id="readPagesCounter">Pages read: 0</p>
+        </div>
+        <div id="TitleDiv">
+            <h1 id="Title">Library</h1>
+        </div>
+    </div>
+
+    <div class="addBookBtnDiv">
+        <button id="addBookBtn">New Book</button>
+    </div>
+
+    <div id="BooksContainer">
+
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
